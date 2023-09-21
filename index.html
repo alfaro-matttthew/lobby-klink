@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+     <link rel="stylesheet" href="css/styles.css">
+    
+    <meta charset="UTF-8">
+    <title>Lobby Klink</title>
+    
+    <style type="text/css">
+        
+         @font-face {
+            font-family: freckleface;
+            src: url(fonts/freckleface/FreckleFace-Regular.ttf)
+        }
+        
+         @font-face {
+            font-family: alumni-sans;
+            src: url(fonts/Alumni_Sans_Inline_One/AlumniSansInlineOne-Regular.ttf)
+        }
+        
+         @font-face {
+            font-family: rubik-glitch;
+            src: url(fonts/Rubik_Glitch/RubikGlitch-Regular.ttf)
+        }
+        
+         @font-face {
+            font-family: rubik-puddles;
+            src: url(fonts/Rubik_Puddles/RubikPuddles-Regular.ttf)
+        }
+        
+        @font-face {
+            font-family: gothic-hybrid;
+            src: url(fonts/bu-gothic-hybrid-font/BuGothicHybrid-xyd5.ttf)
+        }
+        
+         header {
+            height: 480px;
+            width: 100%;
+            background-image: url(images/stage-01.jpg);
+            background-size: cover;
+            background-position: center;
+            color: whitesmoke;
+            font-family: helvetica;
+            font-size: 8rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            text-align: center;
+            padding-top: 120px;
+        }
+        
+        main {
+            height: 1200px;
+        }
+        
+        .headText1 {
+            font-family: helvetica;
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+        }
+        
+        .headText2 {
+            font-family: helvetica;
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            border-left: 25px;
+            border-style: solid;
+            border-color: #ffffff;
+            padding-left: 10px;
+        }
+        
+        .headText3 {
+            font-family: helvetica;
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            
+        }
+        
+        .contentText {
+            font-family: helvetica;
+            font-size: 1rem;
+            font-weight: 300;
+            text-transform: none;
+            letter-spacing: 0px;
+            font-family: serif;
+            line-height: 1.4rem;
+        }
+        
+        .btn {
+            background-color: #30332A;
+            border: 2px;
+            border-style: solid;
+            border-color: #ffffff;
+            color: #ffffff;
+            font-family: helvetica;
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            padding: 10px 30px;
+            margin: auto 10px;
+            transition: 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #BF5E81;
+            border-color: #BF5E81;
+            color: #ffffff;
+        }
+        
+        
+        * {
+            box-sizing: border-box;
+            font-family: freckleface;
+            font-family: rubik-glitch;
+            font-family: rubik-puddles;
+            font-family: alumni-sans;
+        }
+
+        
+        .column1 {
+          float: left;
+          width: 50%;
+          padding: 10px;
+          height: 300px;
+            margin: auto;
+            
+        }
+        
+        .column2 {
+          float: right;
+          width: 50%;
+          padding: 3rem 1rem 1rem 1rem;
+          height: 300px; 
+        }
+        
+        .column3 {
+          float: left;
+          width: 40%;
+          padding: 5rem 1rem 1rem 1rem;
+          height: 300px;
+            margin: auto;
+            
+        }
+        
+        .column4 {
+          float: right;
+          width: 60%;
+          padding: 1rem 1rem 1rem 1rem;
+          height: 300px; 
+        }
+        
+        input[type=text], select, textarea {
+                width: 100%; /* Full width */
+                padding: 12px; /* Some padding */ 
+                border: solid 1px #2B2E26;
+                border-radius: 4px; /* Rounded borders */
+                box-sizing: border-box; /* Make sure that padding and width stays in place */
+                margin-top: 6px; /* Add a top margin */
+                margin-bottom: 16px; /* Bottom margin */
+                resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+                background-color: #8F997D;
+                color: #2B2E26;
+                
+                font-family: helvetica;
+            }
+        
+         input[type=submit] {
+                background-color: transparent;
+                border: 2px;
+                border-style: solid;
+                border-color: #ffffff;
+                color: #ffffff;
+                font-family: helvetica;
+                font-size: 1rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 5px;
+                padding: 10px 30px;
+                margin: auto 10px;
+                transition: 0.3s;
+                cursor: pointer;
+            }
+
+            /* When moving the mouse over the submit button, add a darker green color */
+            input[type=submit]:hover {
+                background-color: #BF5E81;
+                border-color: #BF5E81;
+                color: #ffffff;
+            }
+
+            /* Add a background color and some padding around the form */
+            .container {
+                border-radius: 5px;
+                background-color: transparent;
+                padding: 0px;
+                font-family: dabre-grunge;
+                font-size: 2rem;
+            }
+
+    </style>
+    
+</head>
+
+<body>
+    <div id="centerWrapper">
+        <header>
+            
+            <div style="font-family: freckleface; font-size: 7rem; text-decoration: ;  letter-spacing: 30px; margin-bottom: -30px;">
+                Lobby
+            </div>
+            
+            <div style="font-family: gothic-hybrid ; text-decoration: ; letter-spacing: 25px; text-underline-offset:20px; margin-top: -30px;">
+                Klink
+            </div>
+        
+        </header>
+        
+        <nav style="font-family: helvetica;" >
+            
+             <a href="index.html" style="font-family: helvetica;"> 
+                Home
+            </a> 
+            
+            <a href="store.html" style="font-family: helvetica;"> 
+                Store
+            </a>  
+            
+            <a href="tour.html" style="font-family: helvetica;"> 
+                Tour
+            </a>  
+            
+            <a href="music.html" style="font-family: helvetica;"> 
+                Music
+            </a>  
+            
+            <a href="news.html" style="font-family: helvetica;"> 
+                News
+            </a>  
+            
+            <a href="contact.html" style="font-family: helvetica;"> 
+                Contact
+            </a>
+        
+        </nav>
+        
+        <main>
+            <div class="row">
+                
+              <div class="column1" style="width: 30rem;" >
+                  
+                <img src="images/record-03.png" height="400rem">
+                  
+              </div>
+                
+              <div class="column2" style="height: 30rem;">
+               
+                <div class="headText1" style="color: #BF5E81; font-weight: 500; text-shadow: 4px 4px #7A6FBF; ">
+                    New Album Release
+                  </div>
+               
+                <div class="headText1" style="color: #ffffff; font-style: italic; text-shadow: 4px 4px #BF463B; padding-left: 15px; ">
+                    New Album Release
+                  </div>
+                
+                <div class="headText1" style="color: #BF5E81; font-weight: 500; text-shadow: 4px 4px #7A6FBF; padding-left: 30px; ">
+                    New Album Release
+                  </div>
+                
+                <h3 class="headText2">
+                    Camera Shy
+                  </h3>
+                
+                <p class="contentText">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet eros at ex hendrerit luctus. Nunc aliquam urna non cursus maximus. Phasellus quis nunc ut tortor posuere sagittis. Aliquam aliquam tristique felis porttitor condimentum. Nulla cursus imperdiet nunc, sit amet porttitor nulla varius id. Nulla a erat ac elit aliquet cursus. Aenean consequat rutrum placerat. Aenean in arcu scelerisque, auctor lectus eu, fermentum sapien.
+                  </p>
+                  
+                <button type="button" class="btn" >
+                    Order
+                  </button>
+                
+                <button type="button" class="btn">
+                    Listen
+                  </button>
+                  
+              </div>
+            </div>
+            
+        
+            <div>
+                <div class="row">
+                    <div class="column3" style=" ">
+                        
+                        <h2 class="headText3" style=" margin: 0px auto 0px auto; padding-left: 25px; font-style: italic">
+                            Who Is
+                        </h2>
+                        
+                        <h2 class="headText1" style=" margin: 0px auto 0px auto; ">
+                            Lobby Klink?
+                        </h2>
+                        
+                        <p class="contentText">
+                            Ut ipsum diam, gravida at lacinia non, cursus nec tortor. Mauris cursus enim arcu, sed facilisis nibh posuere in. Sed ac metus id mi aliquam pharetra tempus vitae eros. Vestibulum dignissim, leo porta tempus faucibus, ante nulla lobortis purus, a rutrum arcu velit scelerisque ipsum. Ut molestie sit amet massa mattis vestibulum. Nulla facilisi. Phasellus vitae tincidunt leo, pretium elementum elit. Ut non neque in lacus bibendum scelerisque a et metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                            <br><br>
+                            Quisque tincidunt nulla at purus aliquam sodales sagittis vitae quam. Duis nec dui nec leo lacinia posuere sit amet ac odio. Aenean tincidunt ex dignissim quam commodo faucibus. Donec ultrices nunc sit amet viverra posuere. Pellentesque rhoncus mattis cursus. Sed sollicitudin elementum eros, vitae iaculis felis. Etiam finibus eros in mollis commodo. Nulla eu mi vitae massa feugiat scelerisque ac a nunc. Aenean eu sem quis mauris posuere porta. In quis faucibus est. 
+                        </p>
+                        
+                    </div>
+                    <div class="column4" style=" ">
+                        
+                        <img src="images/band-01.jpg" width="100%">
+                        
+                    </div>
+                </div>
+            </div>
+            
+            
+        
+        
+        </main>
+        
+        
+    </div>
+   
+    <footer>
+            
+        <div class="rowFoot" style="padding-bottom: 100px;">
+
+            <div class="columnFoot1">
+
+                    <a href="index.html" class="btnFoot">
+
+                        <div class="lobbyFoot">
+                            Lobby
+                        </div>
+
+                        <div class="klinkFoot">
+                            Klink
+                        </div>
+
+                    </a>    
+
+            </div>
+
+            <div class="columnFoot2">
+
+                
+
+            </div>
+
+            <div class="columnFoot3">
+
+                <div class="container">
+                      <form action="action_page.php">
+                        
+                        <label for="email">Newsletter</label>
+                        <input type="text" id="email" name="email" placeholder="email">
+
+                        <input type="submit" value="Subscribe">
+
+                      </form>
+                    </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+    
+</body>
+
+</html>

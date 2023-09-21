@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        
+        <link rel="stylesheet" href="css/styles.css">
+        
+        <meta charset="UTF-8">
+        
+        <title>Music</title>
+        
+        <style>
+        
+        <style>
+
+        @font-face {
+            font-family: freckleface;
+            src: url(fonts/freckleface/FreckleFace-Regular.ttf)
+        }
+        
+        @font-face {
+            font-family: alumni-sans;
+            src: url(fonts/Alumni_Sans_Inline_One/AlumniSansInlineOne-Regular.ttf)
+        }
+        
+        @font-face {
+            font-family: rubik-glitch;
+            src: url(fonts/Rubik_Glitch/RubikGlitch-Regular.ttf)
+        }
+        
+        @font-face {
+            font-family: rubik-puddles;
+            src: url(fonts/Rubik_Puddles/RubikPuddles-Regular.ttf)
+        }
+            
+        @font-face {
+            font-family: gothic-hybrid;
+            src: url(fonts/bu-gothic-hybrid-font/BuGothicHybrid-xyd5.ttf)
+        }
+        
+        @font-face {
+            font-family: dabre-grunge;
+            src: url(fonts/dabre-grunge-font/DabreGrunge-E2Z4.ttf)
+        }
+            
+            header {
+                background-image:url(images/stage-02.png);
+                padding-top: 70px;
+                padding-bottom: 110px;
+            }
+            
+             main {
+            height: 2100px;
+            }
+            
+            .rowA {
+                transition: all 0.4s ease-in-out;
+                height: 1800px;
+                margin-top: 25px;
+                margin-bottom: 10px;
+                background-color: transparent;
+            }
+
+            .rowA:after {
+                  content: "";
+                  display: table;
+                  clear: both;
+         
+            }
+            
+            .columnA1 {
+                border-color: #FFF;
+                border-right: 0px solid;
+                background-color: transparent;
+                float: left;
+                width: 20%;
+                padding: 0px 0px;
+                height: 1800px; 
+                transition: all 0.3s ease;
+                font-family: helvetica;
+                
+            }
+            
+            .columnA2 {
+                float: left;
+                background-color: transparent;
+                width: 65%;
+                padding: 0px 0px;
+                height: 1800px; 
+                transition: 0.3s;
+                transition: all 0.3s ease;
+            }
+           
+            .columnA3 {
+                float: right;
+                background-color: transparent;
+                width: 15%;
+                padding: 0px 0px;
+                height: 1800px; 
+                transition: 0.3s;
+                transition: all 0.3s ease;
+            }
+            
+            .sectionGroup {
+                margin-top: 50px;
+                background-color: transparent;
+                
+            }
+            
+            .sectionName {
+                margin-right: 5%;
+                text-align: right;
+                font-size: 2rem;
+                font-family: gothic-hybrid;
+                
+            }
+            
+            .songName {
+                margin-right: 5%;
+                text-align: right;
+                font-size: 3rem;
+                font-family: serif;
+            }
+            
+            .bandName {
+                margin-right: 5%;
+                text-align: right;
+                font-size: 1rem;
+            }
+            
+            .spacer1 {
+                padding:250px 0px;
+                background-color: transparent;
+            }
+            
+            .video {
+                margin: 1%;
+                border: 0px;
+                
+            }
+            
+            .spacer2 {
+                padding:60px 0px;
+                background-color: transparent;
+            }
+        
+            .sideNav {
+                overflow: hidden;
+                background-color: transparent;
+                position: sticky;
+                top: 40%;
+                width: 100%;
+                margin-top: 30px;
+            }
+            
+            .SNLink {
+                color: #FFF;
+                
+                font-family: helvetica;
+                text-transform: uppercase;
+                letter-spacing: 5px;
+                font-size: .8rem;
+                text-decoration: none;
+                line-height: 24pt;
+                cursor: pointer;
+                background-color: transparent;
+                left: 0px;
+                
+                padding: 10px 0px 10px 35px;
+                
+                transition: all 0.3s ease;
+            }
+            
+            .SNLink:hover {
+               font-weight: 700;
+                left: -10px;
+            }
+            
+             input[type=text], select, textarea {
+                width: 100%; /* Full width */
+                padding: 12px; /* Some padding */ 
+                border: solid 1px #2B2E26;
+                border-radius: 4px; /* Rounded borders */
+                box-sizing: border-box; /* Make sure that padding and width stays in place */
+                margin-top: 6px; /* Add a top margin */
+                margin-bottom: 16px; /* Bottom margin */
+                resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+                background-color: #8F997D;
+                color: #2B2E26;
+                
+                font-family: helvetica;
+            }
+        
+         input[type=submit] {
+                background-color: transparent;
+                border: 2px;
+                border-style: solid;
+                border-color: #ffffff;
+                color: #ffffff;
+                font-family: helvetica;
+                font-size: 1rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 5px;
+                padding: 10px 30px;
+                margin: auto 10px;
+                transition: 0.3s;
+                cursor: pointer;
+            }
+
+            /* When moving the mouse over the submit button, add a darker green color */
+            input[type=submit]:hover {
+                background-color: #BF5E81;
+                border-color: #BF5E81;
+                color: #ffffff;
+            }
+
+            /* Add a background color and some padding around the form */
+            .container {
+                border-radius: 5px;
+                background-color: transparent;
+                padding: 0px;
+                font-family: dabre-grunge;
+                font-size: 2rem;
+            }
+            
+        </style>
+        
+    </head>
+    
+    <body>
+    
+        <header>
+        
+            <h1 style="font-family: freckleface; font-size: 7rem; text-decoration: ;  letter-spacing: 30px; background-color: #;">
+                Music
+            </h1>
+        
+        </header>
+        
+        <nav style="font-family: helvetica;" >
+            
+             <a href="index.html" style="font-family: helvetica;"> 
+                Home
+            </a> 
+            
+            <a href="store.html" style="font-family: helvetica;"> 
+                Store
+            </a>  
+            
+            <a href="tour.html" style="font-family: helvetica;"> 
+                Tour
+            </a>  
+            
+            <a href="music.html" style="font-family: helvetica; color: #BF5E81; font-weight: 700;"> 
+                Music
+            </a>  
+            
+            <a href="news.html" style="font-family: helvetica;"> 
+                News
+            </a>  
+            
+            <a href="contact.html" style="font-family: helvetica;"> 
+                Contact
+            </a>
+            
+        </nav>    
+        
+        <main>
+        
+         <!-- --- --- Names --- --- -->
+            
+             <div class="rowA">
+              
+                <div class="columnA1" style="#">
+                
+                <!-- Music Video -->
+                    
+                    <div class="sectionGroup">
+                    
+                        <div class="sectionName">
+                            Music Video
+                        </div>
+
+                        <div class="songName">
+                            Make Me Smile
+                        </div>
+
+                        <div class="bandName">
+                            Lobby Klink
+                        </div>
+                    
+                    </div>
+                    
+                <div class="spacer1"></div>
+                    
+                    <!-- Music Video -->
+                    
+                    <div class="sectionGroup" id="C1">
+                    
+                        <div class="sectionName">
+                            Live Show
+                        </div>
+
+                        <div class="songName">
+                            Another Reason
+                        </div>
+
+                        <div class="bandName">
+                            Lobby Klink
+                        </div>
+                    
+                    </div>
+                    
+                <div class="spacer1"></div>
+                    
+                    <div class="sectionGroup" id="C1">
+                    
+                        <div class="sectionName">
+                            Highlights
+                        </div>
+
+                        <div class="songName">
+                            Live at Stay Golden
+                        </div>
+
+                        <div class="bandName">
+                            Lobby Klink
+                        </div>
+                    
+                    </div>
+                        
+                </div>
+                 
+        <!-- --- --- Videos --- --- --> 
+                 
+                <div class="columnA2" style="#">
+                
+                    <div class="video" id="C1">
+                    
+                       <iframe width="100%" height="560" style="box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.3);"
+                               src="https://www.youtube.com/embed/FJwz_-fyyog" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                        <!--
+                        <iframe width="800" height="450"
+                                src="#">
+                        </iframe>
+                        -->
+                    </div>
+                    
+                <div class="spacer2"></div>
+                    
+                    <div class="video" id="C2">
+                    
+                       <iframe width="100%" height="560" 
+                               src="https://www.youtube.com/embed/sMiSazxa6ug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                        <!--
+                        <iframe width="800" height="450"
+                                src="#">
+                        </iframe>
+                        -->
+                    </div>
+                    
+                <div class="spacer2"></div>
+                    
+                    <div class="video" id="C3">
+                    
+                       <iframe width="100%" height="560" 
+                               src="https://www.youtube.com/embed/FPUecZptF_Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                        <!--
+                        <iframe width="800" height="450"
+                                src="#">
+                        </iframe>
+                        -->
+                    </div>
+                    
+                </div>
+                 
+        <!-- --- --- Side Nav --- --- -->
+                 
+                <div class="columnA3" style="#">
+               
+                    <div class="sideNav">
+                    
+                        <div class="linkDivs">
+                            <a class="SNLink" href="#C1">Music Video</a>
+                        </div>
+                       
+                        <div class="linkDivs">
+                            <a class="SNLink" href="#C2"> Live Show</a>
+                        </div>
+                        
+                        <div class="linkDivs">
+                            <a class="SNLink" href="#C3">Highlights</a>
+                        </div>
+                    
+                    <!-- &#8226;  -->
+                        
+                    </div>
+                  
+                </div>
+                
+            </div>
+        
+        </main>
+        
+       <footer>
+            
+        <div class="rowFoot">
+
+            <div class="columnFoot1">
+
+                    <a href="index.html" class="btnFoot">
+
+                        <div class="lobbyFoot">
+                            Lobby
+                        </div>
+
+                        <div class="klinkFoot">
+                            Klink
+                        </div>
+
+                    </a>    
+
+            </div>
+
+            <div class="columnFoot2">
+
+                
+
+            </div>
+
+            <div class="columnFoot3">
+
+                <div class="container">
+                      <form action="action_page.php">
+                        
+                        <label for="email">Newsletter</label>
+                        <input type="text" id="email" name="email" placeholder="email">
+
+                        <input type="submit" value="Subscribe">
+
+                      </form>
+                    </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+    
+    </body>
+    
+</html>

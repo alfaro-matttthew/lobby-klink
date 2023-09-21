@@ -1,0 +1,218 @@
+        @font-face {
+            font-family: freckleface;
+            src: url(fonts/freckleface/FreckleFace-Regular.ttf)
+        }
+        
+        @font-face {
+            font-family: alumni-sans;
+            src: url(fonts/Alumni_Sans_Inline_One/AlumniSansInlineOne-Regular.ttf)
+        }
+        
+        @font-face {
+            font-family: rubik-glitch;
+            src: url(fonts/Rubik_Glitch/RubikGlitch-Regular.ttf)
+        }
+        
+        @font-face {
+            font-family: rubik-puddles;
+            src: url(fonts/Rubik_Puddles/RubikPuddles-Regular.ttf)
+        }
+
+        @font-face {
+            font-family: gothic-hybrid;
+            src: url(fonts/bu-gothic-hybrid-font/BuGothicHybrid-xyd5.ttf)
+        }
+
+
+    body {
+            background-color: #30332A;
+            margin: 0 0 0 0;
+            /* font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; */
+        }    
+
+    #centerWrapper {
+            width: 100%;
+            background-color: #30332A;
+            margin: 0 auto;
+        }
+
+    header {
+            height: 200px;
+            width: 100%;
+            color: whitesmoke;
+            font-family: helvetica;
+            font-size: 2rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            text-align: center;
+            
+        }
+   
+    nav {
+            height: 50px;
+            width: 100%;
+            background-color: #242620;
+            font-family: helvetica;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 3.7;
+            font-size: 10pt;
+            letter-spacing: 4px;
+            color: white;
+        }
+   
+     nav a {
+            text-decoration: none;
+            color: white;
+            margin-left: 5%;
+            margin-right: 5%;
+            transition: all 0.3s ease;
+           
+        }
+        
+    nav a:hover {
+            background-color: ;
+            color: #BF5E81;
+            transform: translateY(-10px);
+        }   
+
+    nav a {
+        box-shadow: inset 0 0 0 0 #BF5E81;
+        text-decoration: none;
+        color: white;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 0 .25rem;
+        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+
+        }
+        
+    nav a:hover {
+        box-shadow: inset 100px 0 0 0 #BF5E81;
+        color: white;
+        }
+
+ /*   Old Code 
+    nav a {
+        position: relative;
+        text-decoration: none;
+        color: white;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 0 .25rem;
+        }
+
+    nav a::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 20px;
+        border-radius: 4px;
+        background-color: #BF5E81;
+        bottom: 0;
+        left: 0;
+        
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform .3s ease-in-out;
+        }
+
+    nav a:hover::before {
+        transform-origin: left;
+        transform: scaleX(1);
+        }
+   */     
+    main {
+            
+        width: 90%;
+        background-color: #30332A;
+        margin: 0 auto;
+        padding: 3rem 0rem 0rem 0rem;
+        color: white;
+        }
+        
+    footer {
+        height: 100px;
+        width: 100%;
+        background-color: #242620;
+        }
+        
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+       
+    .rowFoot {
+        background-color: #242620;
+        margin: 0px;
+        padding: 0px;
+        }
+
+    .rowFoot:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+
+    .columnFoot1 {
+        float: left;
+        width: 22%;
+        padding: 50px 50px;
+        height: 200px;
+        margin: 0px 0%;
+
+        background-color: transparent;        
+        }
+
+    .columnFoot2 {
+        float: left;
+        width: 10%;
+        padding: 25px 50px;
+        height: 200px;
+        margin: 0px 0%;
+
+        background-color: transparent;        
+        }
+
+    .columnFoot3 {
+        float: right;
+        width: 22%;
+        padding: 25px 50px;
+        height: 200px;
+        margin: 0px 0%;  
+        
+        color: #fff;
+        font-size: 2rem;
+        font-family: serif;
+
+        background-color: transparent;        
+        }
+
+    .lobbyFoot {
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        font-family: freckleface; 
+        font-size: 3rem; 
+        margin-bottom: -30px;
+        text-align: center;
+        line-height: 28pt;
+    }
+
+    .klinkFoot {
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        font-family: gothic-hybrid; 
+        font-size: 3rem; 
+        margin-bottom: -30px;
+        text-align: center;
+        line-height: 28pt;
+        margin: 35px;
+    }
+
+    .btnFoot {
+        text-decoration: none;
+        color: #fff;
+        cursor: pointer;
+    }

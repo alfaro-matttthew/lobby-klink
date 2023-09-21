@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        
+        <link rel="stylesheet" href="css/styles.css">
+        
+        <meta charset="UTF-8">
+        
+        <title>Merch - Music</title>
+        
+        <style>
+            
+              @font-face {
+                font-family: freckleface;
+                src: url(fonts/freckleface/FreckleFace-Regular.ttf)
+            }
+
+             @font-face {
+                font-family: alumni-sans;
+                src: url(fonts/Alumni_Sans_Inline_One/AlumniSansInlineOne-Regular.ttf)
+            }
+
+             @font-face {
+                font-family: rubik-glitch;
+                src: url(fonts/Rubik_Glitch/RubikGlitch-Regular.ttf)
+            }
+
+             @font-face {
+                font-family: rubik-puddles;
+                src: url(fonts/Rubik_Puddles/RubikPuddles-Regular.ttf)
+            }
+            
+             @font-face {
+                font-family: gothic-hybrid;
+                src: url(fonts/bu-gothic-hybrid-font/BuGothicHybrid-xyd5.ttf)
+            }
+
+            @font-face {
+                font-family: dabre-grunge;
+                src: url(fonts/dabre-grunge-font/DabreGrunge-E2Z4.otf)
+            }
+            
+            @font-face {
+                font-family: korger-gothic;
+                src: url(fonts/korger-gothic-font/KorgerGothic-DaKD.ttf)
+            }
+            
+            header {
+                background-image:url(images/stage-02.png);
+                padding-top: 70px;
+                padding-bottom: 110px;
+            }
+        
+             main {
+            height: 1100px;
+            }
+            
+    /* --- --- --- COLUMN A --- --- --- */
+            
+            .rowA {
+                background-color: transparent;
+                
+                transition: all 0.4s ease-in-out;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                align-content: center;
+            }
+
+            .rowA:after {
+                  content: "";
+                  display: table;
+                  clear: both;
+         
+            }
+  
+            
+            .columnA1 {
+                border-color: #FFF;
+                border-right: 0px solid;
+                border-radius: 10px 10px 10px 10px;
+                background-color: #484D3F;
+                float: left;
+                width: 30%;
+                padding: 0px 0px;
+                height:100px; 
+                transition: all 0.6s ease;
+                margin-left: 2%;
+                border: solid 1px #2B2E26;
+                border-radius: 10px;
+                box-shadow: 2px 10px 10px #2B2E26;
+                
+            }
+            
+            
+            
+            .columnA2 {
+                border-color: #FFF;
+                border-right: 0px solid;
+                border-radius: 10px 10px 10px 10px;
+                background-color: #484D3F;
+                float: left;
+                width: 30%;
+                padding: 0px 0px;
+                height:100px; 
+                transition: all 0.6s ease;
+                margin-right: 2%;
+                margin-left: 2%;
+                border: solid 1px #2B2E26;
+                border-radius: 10px;
+                box-shadow: 2px 10px 10px #2B2E26;
+            }
+            
+            
+           
+            .columnA3 {
+                border-color: #FFF;
+                border-right: 0px solid;
+                border-radius: 10px 10px 10px 10px;
+                background-color: #484D3F;
+                float: left;
+                width: 30%;
+                padding: 0px 0px;
+                height:100px; 
+                margin-right: 2%;
+                transition: all 0.6s ease;
+                border: solid 1px #2B2E26;
+                border-radius: 10px;
+                box-shadow: 2px 10px 10px #2B2E26;
+            }
+            
+            
+            
+            .spacer {
+                padding-top: 40px;
+            }
+            
+             .productName {
+                background-color: #484D3F;
+                font-size: 1.2rem;
+                font-family: korger-gothic;
+                text-transform: none;
+                text-align: center;
+                line-height: 0pt;
+                letter-spacing: 4px;
+                color: white;
+                border-color: transparent;
+                border-radius: 10px 10px 10px 10px;
+                transition: all 0.3s ease-in-out;
+                text-shadow: 2px 2px 8px #000;
+                text-decoration: none;
+            }
+            
+            .productName:hover {
+                 background-color: rgba(191, 94, 129, 0.6);
+                color: #FFF;
+                border-color: transparent;
+            }
+            
+            hr.solid {
+                border-top: 3px solid #bbb;
+                margin: 50px 0px;
+                color: #2B2E26;
+            }
+            
+        /* --- --- --- COLUMN B --- --- --- */
+            
+            .rowZ {
+                background-color: transparent;
+                
+                transition: all 0.4s ease-in-out;
+                margin-top: 30px;
+                margin-bottom: 100px;
+                align-content: center;
+            }
+
+            .rowZ:after {
+                  content: "";
+                  display: table;
+                  clear: both;
+            }
+            
+            .columnZ1 {
+                float: left;
+                width: 30%;
+                padding: 0px 0px;
+                height: 325px;
+                margin: 0px 1.5%;
+                /*
+                border: solid 1px #2B2E26;
+                */
+                background-color: transparent;
+                /*
+                box-shadow: 2px 10px 10px #2B2E26;
+                */
+                transition: all 0.6s ease;
+                
+            }
+                
+            .columnZ1:hover {
+               transform: translateY(-0px);
+            }
+            
+            .columnZ1:hover .image1 {
+                left: -10%;
+            }
+            
+            .columnZ1:hover .image2 {
+                left: 30%;
+                transform: rotate(45deg);
+            }
+            
+            .columnZ2 {
+                float: left;
+                width: 30%;
+                padding: 0px 0px;
+                height: 325px;
+                margin: 0px 1.5%;
+                /*
+                border: solid 1px #2B2E26;
+                */
+                background-color: transparent;
+                /*
+                box-shadow: 2px 10px 10px #2B2E26;
+                */
+                transition: all 0.6s ease;
+            }
+                
+            .columnZ2:hover {
+                transform: translateY(-0px);
+            }
+            
+            .columnZ2:hover .image1 {
+                left: -10%;
+            }
+            
+            .columnZ2:hover .image2 {
+                left: 30%;
+                transform: rotate(45deg);
+            }
+            
+             .columnZ3 {
+                float: left;
+                width: 30%;
+                padding: 0px 0px;
+                height: 325px;
+                margin: 0px 1.5%;
+                /*
+                border: solid 1px #2B2E26;
+                */
+                background-color: transparent;
+                /*
+                box-shadow: 2px 10px 10px #2B2E26;
+                */
+                transition: all 0.6s ease;
+            }
+                
+            .columnZ3:hover {
+                transform: translateY(-0px);
+            }
+            
+            .columnZ3:hover .image1 {
+                left: -10%;
+            }
+            
+            .columnZ3:hover .image2 {
+                left: 30%;
+                transform: rotate(45deg);
+            }
+            
+            .parent {
+                position: relative;
+                top: 0;
+                left: 0;
+            }
+            
+            .image1 {
+                position: relative;
+                top: 0;
+                left: 10%;
+                border: 1px solid #000000;
+                transition: 0.3s;
+                box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.3);
+                border: none;
+
+              }
+            
+            .image2 {
+                position: absolute;
+                top: 0px;
+                left: 10%;
+                border: 1px solid #000000;
+                transition: 0.3s;
+                border: none;
+              }
+            
+            
+            
+            
+            .itemName {
+               
+                
+                width: 100%;
+                height: 160px;
+                
+                color: #FFF;
+                
+                margin-top: 0px;
+                padding-top: 20px;
+                
+                font-family: serif;
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                line-height: #;
+                text-align: center;
+                
+                transition: all 0.6s ease;
+            }
+            
+             input[type=text], select, textarea {
+                width: 100%; /* Full width */
+                padding: 12px; /* Some padding */ 
+                border: solid 1px #2B2E26;
+                border-radius: 4px; /* Rounded borders */
+                box-sizing: border-box; /* Make sure that padding and width stays in place */
+                margin-top: 6px; /* Add a top margin */
+                margin-bottom: 16px; /* Bottom margin */
+                resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+                background-color: #8F997D;
+                color: #2B2E26;
+                
+                font-family: helvetica;
+            }
+        
+         input[type=submit] {
+                background-color: transparent;
+                border: 2px;
+                border-style: solid;
+                border-color: #ffffff;
+                color: #ffffff;
+                font-family: helvetica;
+                font-size: 1rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 5px;
+                padding: 10px 30px;
+                margin: auto 10px;
+                transition: 0.3s;
+                cursor: pointer;
+            }
+
+            /* When moving the mouse over the submit button, add a darker green color */
+            input[type=submit]:hover {
+                background-color: #BF5E81;
+                border-color: #BF5E81;
+                color: #ffffff;
+            }
+
+            /* Add a background color and some padding around the form */
+            .container {
+                border-radius: 5px;
+                background-color: transparent;
+                padding: 0px;
+                font-family: dabre-grunge;
+                font-size: 2rem;
+            }
+            
+            
+            </style>
+        
+    </head>
+    
+    <body>
+    
+        <header>
+        
+            <h1 style="font-family: freckleface; font-size: 7rem; text-decoration: ;  letter-spacing: 30px; background-color: #;">
+                Music
+            </h1>
+            
+            
+        
+        </header>
+        
+        <nav style="font-family: helvetica;" >
+            
+              <a href="index.html" style="font-family: helvetica;"> 
+                Home
+            </a> 
+            
+            <a href="store.html" style="font-family: helvetica; color: #BF5E81; font-weight: 700;"> 
+                Store
+            </a>  
+            
+            <a href="tour.html" style="font-family: helvetica;"> 
+                Tour
+            </a>  
+            
+            <a href="music.html" style="font-family: helvetica;"> 
+                Music
+            </a>  
+            
+            <a href="news.html" style="font-family: helvetica;"> 
+                News
+            </a>  
+            
+            <a href="contact.html" style="font-family: helvetica;"> 
+                Contact
+            </a>
+            
+        </nav>
+            
+        <main>
+        
+         <!-- --- --- Categories --- --- -->
+            
+             <div class="rowA">
+              
+                <div class="columnA1" style="background-image: url(images/merch-01.png); background-size: cover; background-position: center;">
+                    
+                    <div class="spacer"></div>
+                    
+                    <a href="merch-appearal.html" class="productName" style="margin:0px 0px 0px 0px; padding: 38px 152px 42px 152px;">
+                        Appearal
+                    </a>
+                    
+                </div>
+                
+                <div class="columnA2" style="background-image: url(images/merch-02.png); background-size: cover; background-position: center;">
+                    
+                     <div class="spacer"></div>
+                    
+                    <a href="merch-artwork.html" class="productName" style="margin: 0px 0px 0px 0px; padding: 38px 155px 42px 156px;">
+                        Artwork
+                    </a>
+                    
+                </div>
+              
+                <div class="columnA3" style="background-image: url(images/merch-03.png); background-size: cover; background-position: center;">
+               
+                     <div class="spacer"></div>
+                    
+                    <a href="merch-music.html" class="productName" style="margin: 0px 0px 0px 0px; padding: 38px 167px 42px 168px;">
+                        Music
+                    </a>
+                  
+                </div>
+                
+            </div>
+            
+            <hr class="solid">
+            
+            <!-- --- --- Row 1 --- --- -->
+        
+            <div class="rowZ">
+            
+                <div class="columnZ1">
+                
+                    <div class="parent">
+                    
+                        <img class="image1" src="images/merch-music-01.png" style="height: 325px; width: 325px; z-index: 2;">
+
+                        <img class="image2" src="images/merch-music-01-disc.png" style="height: 325px; width: 325px; z-index: 1;">
+                    
+                    </div>
+                    
+                    <div class="itemName">
+                        Backrow Lover<br>$35.00
+                    </div>
+            
+                </div>
+                
+                <div class="columnZ2">
+                
+                    <div class="parent">
+                    
+                        <img class="image1" src="images/merch-music-02.png" style="height: 325px; width: 325px; z-index: 2;">
+
+                        <img class="image2" src="images/merch-music-02-disc.png" style="height: 325px; width: 325px; z-index: 1;">
+                    
+                    </div>
+                    
+                    <div class="itemName">
+                        The Condition<br>$35.00
+                    </div>
+            
+                </div>
+                
+                <div class="columnZ3">
+                
+                    <div class="parent">
+                    
+                        <img class="image1" src="images/merch-music-03.png" style="height: 325px; width: 325px; z-index: 2;">
+
+                        <img class="image2" src="images/merch-music-03-disc.png" style="height: 325px; width: 325px; z-index: 1;">
+                    
+                    </div>
+                    
+                    <div class="itemName">
+                        Black's Door<br>$35.00
+                    </div>
+            
+                </div>
+                
+            
+            </div>
+            
+           <!-- --- --- Row 1 --- --- -->
+        
+            <div class="rowZ">
+            
+                <div class="columnZ1">
+                
+                    <div class="parent">
+                    
+                        <img class="image1" src="images/merch-music-04.png" style="height: 325px; width: 325px; z-index: 2;">
+
+                        <img class="image2" src="images/merch-music-04-disc.png" style="height: 325px; width: 325px; z-index: 1;">
+                    
+                    </div>
+                    
+                    <div class="itemName">
+                        Backrow Lover<br>$35.00
+                    </div>
+            
+                </div>
+                
+                <div class="columnZ2">
+                
+                    <div class="parent">
+                    
+                        <img class="image1" src="images/merch-music-05.png" style="height: 325px; width: 325px; z-index: 2;">
+
+                        <img class="image2" src="images/merch-music-05-disc.png" style="height: 325px; width: 325px; z-index: 1;">
+                    
+                    </div>
+                    
+                    <div class="itemName">
+                        The Condition<br>$35.00
+                    </div>
+            
+                </div>
+                
+                <div class="columnZ3">
+                
+                    <div class="parent">
+                    
+                        <img class="image1" src="images/merch-music-06.png" style="height: 325px; width: 325px; z-index: 2;">
+
+                        <img class="image2" src="images/merch-music-06-disc.png" style="height: 325px; width: 325px; z-index: 1;">
+                    
+                    </div>
+                    
+                    <div class="itemName">
+                        Black's Door<br>$35.00
+                    </div>
+            
+                </div>
+                
+            
+            </div>
+            
+        </main>
+        
+                <footer>
+            
+        <div class="rowFoot">
+
+            <div class="columnFoot1">
+
+                    <a href="index.html" class="btnFoot">
+
+                        <div class="lobbyFoot">
+                            Lobby
+                        </div>
+
+                        <div class="klinkFoot">
+                            Klink
+                        </div>
+
+                    </a>    
+
+            </div>
+
+            <div class="columnFoot2">
+
+                
+
+            </div>
+
+            <div class="columnFoot3">
+
+                <div class="container">
+                      <form action="action_page.php">
+                        
+                        <label for="email">Newsletter</label>
+                        <input type="text" id="email" name="email" placeholder="email">
+
+                        <input type="submit" value="Subscribe">
+
+                      </form>
+                    </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+    
+    </body>
+    
+</html>
